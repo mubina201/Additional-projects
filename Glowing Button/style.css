@@ -3,7 +3,7 @@ html, body{
     justify-content: center;
     align-items: center;
     background-color: #161616;
-    margin-top: 170px;
+    margin-top: 150px;
     transform: scale(1.5);
 }
 /* Button */
@@ -30,7 +30,7 @@ html, body{
 }
 .btn::before{
     content: "";
-    background: linear-gradiend(
+    background: linear-gradient(
         45deg,
         #FF0000, #FF7300, #FFFB00, #48FF00,
         #00FFD5, #002BFF, #FF00C8, #FF0000
@@ -43,7 +43,7 @@ html, body{
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     filter: blur(8px);
-    animation: glowing 20s linear-infinite;
+    animation: glowing 20s linear infinite;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
     opacity: 0;
@@ -57,9 +57,10 @@ html, body{
 .btn:hover::before{
     opacity: 1;
 }
-.btn:active::after{
+.btn:active:after{
     background: transparent;
 }
 .btn:active{
     color: #000;
+    font-weight: bold;
 }
