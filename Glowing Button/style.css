@@ -3,7 +3,7 @@ html, body{
     justify-content: center;
     align-items: center;
     background-color: #161616;
-    overflow: hidden;
+    margin-top: 170px;
     transform: scale(1.5);
 }
 /* Button */
